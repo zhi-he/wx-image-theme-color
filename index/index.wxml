@@ -1,0 +1,7 @@
+<view class="intro" style="background: {{imgColorCanvas.rgb}};">
+<!-- 一个隐藏的canvas标签用于绘制图片 -->
+<canvas canvas-id="myCanvas" style="width: {{imgColorCanvas.w}}px; height: {{imgColorCanvas.h}}px;"></canvas>
+
+<image src="{{imgSrc}}" mode="widthFix"></image>
+</view>
+将图片地址复制粘贴进下面的输入框：<input value="{{imgSrc}}" bindblur="getSrc"></input>
